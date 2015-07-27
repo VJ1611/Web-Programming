@@ -1,0 +1,209 @@
+
+<html>
+<head><title>add customer</title>
+ <style>
+body
+{
+font-family:Comic Sans MS;
+font-size:18px;
+}
+
+</style>
+
+  <script type="text/javascript">
+    function SetFocus(InputID)   
+    {      
+	 document.getElementById(InputID).focus();   
+    } 
+    
+	function formValidation()
+    { 
+        var check=0;
+		var cname = document.cuform.CName;
+		var clname = document.cuform.ClName;
+		var cEmail = document.cuform.Email;
+		var pnum = document.cuform.Contact;
+	
+	
+        if(allLetter(cname))
+        {
+            
+        if(allLetter1(clname))
+        {
+        if(allnumeric(pnum))
+		{
+		if(ValidateEmail(cEmail))
+		{
+		if(ValidateCheckbox())
+		{
+		check=1;
+		}
+		}
+		}
+		}
+		}	
+        else
+        {
+            return false;
+        }   
+		if(check==0)
+		{	
+		return false;
+		}
+		else
+		{   
+	      alert('Form Submitted Successfully ')
+		}
+    }
+
+    function allLetter(cname)
+	{ 
+		var letters = /^[A-Z]{1}[a-z]*$/;
+		if(cname.value.match(letters))
+		{
+			return true;
+		}
+		else
+		{
+			alert('invalid first name ');
+			cname.focus();
+			return false;
+		}
+	}
+
+	function allLetter1(cname)
+	{ 
+		var letters = /^[A-Z]{1}[a-z]*$/;
+		if(cname.value.match(letters))
+		{
+			return true;
+		}
+		else
+		{
+			alert('invalid last name ');
+			cname.focus();
+			return false;
+		}
+	}  
+  
+
+	function ValidateEmail(cEmail)
+	{
+		var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+		if(cEmail.value.match(mailformat))
+		{
+			return true;
+		}
+		else
+		{
+			alert("invalid Email Address!");
+			cEmail.focus();
+			return false;
+		}
+	}
+	function allnumeric(pnum)
+	{ 
+		var numbers = /^[0-9]+$/;
+		if(pnum.value.match(numbers)&&pnum.value>111111111&&pnum.value<10000000000)
+		{	
+			return true;
+		}
+		else
+		{
+			alert('invalid Contact number ');
+			pnum.focus();
+			return false;
+		}
+	}
+	function ValidateCheckbox()
+	{
+		
+		var chks = document.getElementsByName('MyCheckbox[]');
+		var checkCount = 0;
+		
+	
+			for (var i = 0; i < chks.length; i++)
+			{
+				if (chks[i].checked)
+				{
+				checkCount++;
+				}
+			}
+			if (checkCount > 3)
+			{
+				alert("Please select maximum of three.");
+				return false;
+			}
+			
+			else if(checkCount == 0)
+			{
+				alert('Please select atleast one of the checkboxes')
+				return false;
+			}
+			else return true;
+	}
+
+     
+
+</script>
+
+</head> 
+
+<body onload="SetFocus('CName')"> 
+ 
+      <h1 align="center"><b> Registration Form</b></h1>
+<h4><font color="red"> <center ><sup>*</sup> All fields are mandatory </center> </font></h4>
+<form name="cuform" >
+	
+   <table align="center">
+
+<tr><td>
+
+   First name :</td><td>
+       <input type="text" name="CName" id="CName" /></td></tr><tr></tr><tr></tr>
+
+<tr><td>
+
+   Last name :</td><td>
+       <input type="text" name="ClName"  /></td></tr><tr></tr><tr></tr>
+
+
+<tr><td>
+ 
+	Contact Number :</td><td>
+	<input type="text" maxlength=10 name="Contact" /></td></tr><tr></tr><tr></tr>
+
+<tr><td>
+
+	Email :</td><td>
+	<input type="text" name="Email"  /></td></tr><tr></tr><tr></tr>
+
+
+<tr><td>	
+	Hockey <input type="CHECKBOX" name="MyCheckbox[]" value="Hockey" id="Hockey"/></td></tr><tr></tr><tr></tr>
+<tr><td>
+	Travel
+	<input type="CHECKBOX" name="MyCheckbox[]" value="Travel" id="Travel"/></td></tr><tr></tr><tr></tr>
+<tr><td>	
+	Chess
+	<input type="CHECKBOX" name="MyCheckbox[]" value="Chess" id="Chess"/></td></tr><tr></tr><tr></tr>
+<tr><td>	
+	Coin Collecting
+	<input type="CHECKBOX" name="MyCheckbox[]" value="Coin Collecting" id="Coin Collecting"/></td></tr><tr></tr><tr></tr>
+<tr><td>	
+	Stamp Collecting
+	<input type="CHECKBOX" name="MyCheckbox[]" value="Stamp Collecting" id="Stamp Collecting"/></td></tr><tr></tr><tr></tr>
+<tr><td>	
+	Shopping
+	<input type="CHECKBOX" name="MyCheckbox[]" value="Shopping" id="Shopping"/></td></tr><tr></tr><tr></tr>
+	
+
+	
+</table>
+ <center><input type="submit" name="submit" value="Submit" onclick="return formValidation()"/></input></center>
+
+</form>
+</div>
+</div>
+</body>
+</html>

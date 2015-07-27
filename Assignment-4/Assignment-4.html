@@ -1,0 +1,63 @@
+
+<!doctype html>
+
+<html>
+<head><title>Javascript</title>
+
+<script src="form.js"></script>
+
+<style>
+body
+{
+font-family:Comic Sans MS;
+font-size:18px;
+}
+span 
+{
+color:red;
+font-style:italic;
+font-weight:400;
+}
+</style>
+
+</head>
+
+<body>
+<h1 align="center"> In class Exercise 3 - Assignment-4</h1>
+
+<form name="form" onsubmit='return display(this);'>
+
+<table align="center">
+<tr><td></td><td><span id="error1"> </span></td></tr>
+	<tr>
+		<td>ID:</td>
+		<td><input type="text" id="ID" onblur="error()">
+		</td>
+	</tr>
+    <tr><td></td><td><span id="error2"> </span></td></tr>
+	<tr>
+		<td>First Name:</td>
+		<td><input type="text" id="firstName" onblur="error()">
+		</td>
+	</tr>
+    <tr><td></td><td><span id="error3"> </span></td></tr>
+	<tr>
+		<td>Last Name:</td>
+		<td><input type="text" id="lastName" onblur="error()">
+		</td>
+	</tr>	
+	<tr>
+		<td><input type="submit" value="Add" onclick="myFunction()"></td>
+		<td></td>
+	</tr>
+</table>
+
+<h1>Result:</h1>
+	<div id='display_ID' ></div>
+	<div id='display_firstname' ></div>
+	<div id='display_lastname' ></div>
+
+</form>
+
+</body>
+</html>

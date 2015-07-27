@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Assignment 5a</title>
+<link href="assignment5.css" rel="stylesheet" type="text/css"></link>        
+
+		
+		<script type="text/javascript">
+		
+			function getDate(){
+				var d = new Date();
+				var hours = d.getHours();
+				var minutes = d.getMinutes();
+				dateString = "<center><b>The time is " + minutes + " minutes after " + 
+				hours + " hours (24 hour time).</b></center>";
+				document.getElementById("time").innerHTML = dateString;
+			}
+			window.onload=getDate;
+		</script>
+	</head>
+	
+	<body >
+    <h1>Assignment 5</h1>
+		 <ul>
+  <li><a href="Assignment5b.html">Assignment5b</a></li>&nbsp;&nbsp;
+  <li><a href="Assignment5c.html">Assignment5c</a></li>&nbsp;&nbsp;
+  
+</ul>
+			<h1>See the Time below</h1>
+		
+		<div id="time" ></div>
+		<br><br>
+		
+       
+		
+	</body>
+</html>

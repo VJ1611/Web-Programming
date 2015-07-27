@@ -1,0 +1,63 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html"/>
+
+<title>Guess My Number</title>
+
+<link href="guess.css" rel="stylesheet" type="text/css"></link>
+<script type="text/javascript" src="guess.js"></script>
+
+
+
+</head>
+<body onload="initialize()">
+<h1>Assignment 5</h1>
+		 <ul>
+  <li><a href="Assignment5a.html">Assignment5a</a></li>&nbsp;&nbsp;&nbsp;&nbsp;
+  <li><a href="Assignment5b.html">Assignment5b</a></li>&nbsp;&nbsp;
+  
+</ul>
+
+<h2>Guess My Number Game</h2>
+<form name="game" method="post" action="">
+		<table border="5" cellspacing="5" cellpadding="0">
+			<tr>
+				<th class="logo" rowspan="5" scope="col"><img src="guess_logo.jpg" alt="Guess My Number" class="logo" /></th>
+				<th colspan="2" scope="col">Number Range</th>
+				<th rowspan="2" scope="col">
+					<input type="button" class="inputButton" value="Start" onclick="startGame()" />
+				</th>
+			</tr>
+			<tr>
+				<td>From:<br />
+					<input name="from" type="text" id="from" value="1" size="10" maxlength="10" />
+				</td>
+				<td>To:<br />
+					<input name="to" type="text" id="to" value="100" size="10" maxlength="10" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3"><input name="instruction" type="text" class="message" id="instruction" value="Instruction field" size="70" /></td>
+			</tr>
+			<tr>
+				<td colspan="3">
+					<input name="guessInput" type="text" id="guessInput" value="0" size="10" maxlength="10" />
+					<br />
+					<input type="button" class="inputButton" value="Guess" onclick="guess()" />
+				</td>
+			</tr>
+			<tr>
+				<td colspan="3"><input name="guesses" type="text" class="message" id="guesses" value="Guesses field" size="70" /></td>
+			</tr>
+		</table>
+        <br />
+        <a href="http://validator.w3.org/check/referer" ><img src="valid-xhtml.png" alt="validator image missing"/>  </a>
+	</form>
+	
+<br></br> <br></br> 
+
+</body>
+</html>

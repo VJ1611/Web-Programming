@@ -1,0 +1,66 @@
+html{
+	background: url(bg1.jpg) no-repeat fixed; 
+	padding:60px;
+	height:100%;
+}
+body{
+background-color: lightgrey;
+background: url(music1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+color:black;
+font-family:Comic Sans MS;
+font-size:18px;
+padding:40px;
+font-weight:bolder;
+}
+
+
+#search{
+border: 1px solid black;
+width: 836px;
+padding-left: 10px;
+}
+
+#searchbuttons{
+text-align: center;
+}
+
+table{
+border: 1px solid white;
+width: 848px;
+}
+
+th{
+border-collapse:collapse;
+border: 1px solid white;
+background-color: gold;
+text-align:center;
+color: black;
+}
+
+td{
+border-collapse:collapse;
+border: 1px solid white;
+background-color: lightgrey;
+text-align: right;
+padding-right: 5px;
+width: auto;
+color: black;
+}
+
+#output{
+text-align:center;
+}
+
+#content{
+width: 900px;
+margin-left: 100px;
+margin-right: 100px;
+}
+
+span{
+text-align:center;
+}

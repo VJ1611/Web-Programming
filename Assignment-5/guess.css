@@ -1,0 +1,145 @@
+@charset "utf-8";
+html{
+	background-color:#FF6347;
+	padding:60px;
+}
+body {
+		margin: 0;
+	padding: 0;
+	color: #000;
+background-color:#FDF5E6;
+	text-align: center;
+	font-family:Comic Sans MS;
+font-size:18px;
+}
+
+ul {
+	text-align:center;
+	background-color:#F5DEB3;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+}
+
+li 
+{
+    display: inline;
+}
+ ol, dl { 
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+	
+	text-align: left;
+	text-align:center;
+	padding:10px;
+}
+a img { 
+	border: none;
+	margin-left:auto; 
+	margin-right:auto;
+}
+
+
+a:hover, a:active, a:focus { 
+	text-decoration: none;
+}
+
+
+.container {
+	width: 960px;
+	background: #FFF;
+	margin: 0 auto; 
+}
+
+
+.content {
+	padding: 0px 0;
+}
+
+table {
+	color: #000000;
+	background-color: #F2F5A9;
+	border-top-width: 5px;
+	border-right-width: 5px;
+	border-bottom-width: 5px;
+	border-left-width: 5px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #999;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #999;
+	text-align: center;
+	margin-left:auto; 
+    margin-right:auto;
+}
+
+
+th {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-color: #000;
+	border-right-color: #999;
+	border-bottom-color: #999;
+	border-left-color: #000;
+	font-size: x-large;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+}
+
+tr td {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #000;
+	border-right-color: #999;
+	border-bottom-color: #999;
+	border-left-color: #000;
+	margin: 2px;
+	padding: 2px;
+}
+
+.logo {
+	background-color: #FFF;
+}
+
+.inputButton {
+	background-color: #55dd55;
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #FFF;
+	border-right-color: #666;
+	border-bottom-color: #666;
+	border-left-color: #FFF;
+	font-weight: bold;
+}
+.message {
+	font-size: small;
+	font-weight: normal;
+	color: #F00;
+}
+#footer {
+	font-size: x-small;
+	font-style: italic;
+	text-align: left;
+}

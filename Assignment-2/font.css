@@ -1,0 +1,101 @@
+html
+{ 
+  height: 100%;
+  background-image:url(bg.jpg);
+  background-attachment: fixed;
+  padding:20px;
+}
+
+body
+{ 
+
+  font-family:georgia,garamond,serif;
+  background: #FFCC00;
+  color: #000000;
+  padding:10px;
+}
+
+h1, h2
+{ color: #A4A400;
+  background: #F0F0F0;
+  font-family:Century Gothic, Futura, Verdana;
+  text-align: center;
+}
+
+span.bold
+{
+ font-weight:bold;
+}
+
+span.quote
+{
+ font-weight:bold;
+ font-style:italic;
+ text-align:center;
+}
+
+figure
+{
+	text-align:center;
+}
+
+a, a:hover
+{ outline: none;
+  text-decoration: underline;
+  color: #A4A400;
+  }
+  
+  a:hover
+{ text-decoration: none;
+background-color: #43423F;}
+  
+img
+{
+	display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+img.hoveringicon {
+ float: right;
+ margin-right: 1em;
+}
+
+table {
+    width: 100%;
+	border-collapse: collapse;
+}
+
+
+#nav {
+    float:left;
+	margin-left:50px;
+    padding:0px;	      
+}
+
+ul#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul#menu li{
+ display: inline;
+ font-family:Berlin Sans FB;
+ color:#F0F0F0;
+}
+
+ul#menu li a {
+    background-color: #DCD191;
+    color: blue;
+    padding: 6px;
+    text-decoration: none;
+	border-right-color:blue;
+	border-right-style:solid;
+	border-right-width:10px;
+	overflow:hidden;
+}
+
+ul#menu li a:hover {
+    background-color: #F0F0F0;
+}
